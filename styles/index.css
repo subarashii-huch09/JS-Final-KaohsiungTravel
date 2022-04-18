@@ -1,0 +1,34 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: "Microsoft JhengHei", "Noto Sans",sans-serif ;
+  overflow-x:hidden;
+  text-decoration: none;
+  background-color:whitesmoke;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  background-image: url(../assets/Hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.form-select:hover{
+  background-color: rgba(235, 240, 243, 0.638);
+}
+
+.header_nav {
+  position: absolute;
+  top:23rem;
+  left: 20%;
+
+}
