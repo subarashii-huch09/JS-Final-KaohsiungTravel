@@ -31,7 +31,7 @@ img {
 
 .header_nav {
   position: absolute;
-  top: 19rem;
+  top: 19.5rem;
   left: 17%;
 }
 
@@ -42,19 +42,37 @@ img {
 .arrow-down {
   position: absolute;
   left: 50%;
-  top: 8.5rem;
+  top: 12.5rem;
   height: 2.65rem;
   width: 2.5rem;
   border-radius: 50%;
-  border: 1px solid #559AC8;
-  
+  border: 1px solid #559ac8;
+}
+@media only screen and (max-width: 25em) {
+  .header_nav ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .btn {
+    width: 200%;
+  }
+
+  .arrow-down {
+    top: 18rem;
+  }
 }
 
+@media only screen and (max-width: 28em) {
+  .btn {
+    padding: 0.5rem;
+    margin: 0;
+  }
+}
 
-
-
-@media only screen and (min-width: 70rem){
+@media only screen and (min-width: 70rem) {
   .btn {
     width: 80%;
+    font-size: 1.25rem;
   }
 }
