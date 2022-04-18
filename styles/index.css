@@ -41,15 +41,15 @@ img {
 
 .arrow-down {
   position: absolute;
-  left: 50%;
-  top: 120%;
-  height: 2.65rem;
-  width: 2.5rem;
+  left: 49.5%;
+  top: 122%;
+  height: 2rem;
+  width: 2.15rem;
   border-radius: 50%;
   border: 1px solid #559ac8;
   background-color:whitesmoke;
   z-index: 1;
-  margin-top: 2.75rem;
+  margin-top: 1rem;
 }
 
 .border_top {
@@ -60,10 +60,11 @@ img {
   position: absolute;
   top: 125%;
   left: 10%;
-  margin-top: 2.75rem;
+  margin-top: 1rem;
 }
+
 .touristSpot_list {
-  margin-top: 25rem;
+  padding: 5rem;
 }
 
 @media only screen and (max-width: 28em) {
@@ -80,7 +81,7 @@ img {
   }
 
   .arrow-down {
-    top: 155%;
+    top: 157%;
     left: 48%;
   }
 
