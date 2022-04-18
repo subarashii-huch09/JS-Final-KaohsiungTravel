@@ -1,12 +1,15 @@
-*,*::before,*::after{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-body, html {
-  font-family: "Microsoft JhengHei", "Noto Sans",sans-serif ;
-  overflow-x:hidden;
+body,
+html {
+  font-family: "Microsoft JhengHei", "Noto Sans", sans-serif;
+  overflow-x: hidden;
   text-decoration: none;
-  background-color:whitesmoke;
+  background-color: whitesmoke;
 }
 
 img {
@@ -22,12 +25,36 @@ img {
   position: relative;
 }
 
-.form-select:hover{
+.form-select:hover {
   background-color: rgba(235, 240, 243, 0.638);
 }
 
 .header_nav {
   position: absolute;
-  top:21.5rem;
-  left: 20%;
+  top: 19rem;
+  left: 17%;
+}
+
+.main {
+  position: relative;
+}
+
+.arrow-down {
+  position: absolute;
+  left: 50%;
+  top: 8.5rem;
+  height: 2.65rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid #559AC8;
+  
+}
+
+
+
+
+@media only screen and (min-width: 70rem){
+  .btn {
+    width: 80%;
+  }
 }
