@@ -1,0 +1,25 @@
+{
+  "name": "js-final-kaohsiungtravel",
+  "version": "1.0.0",
+  "description": "【最終試煉】JavaScript 入門篇 - 學徒的試煉 - 高雄旅遊網資訊 https://hexschool.github.io/JavaScript_HomeWork/",
+  "main": "all.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subarashii-huch09/JS-Final-KaohsiungTravel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subarashii-huch09/JS-Final-KaohsiungTravel/issues"
+  },
+  "homepage": "https://github.com/subarashii-huch09/JS-Final-KaohsiungTravel#readme",
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
