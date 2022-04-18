@@ -29,19 +29,19 @@ img {
   background-size: cover;
 }
 
-.form-select:hover {
+.header .district-select:hover {
   background-color: rgba(235, 240, 243, 0.638);
 }
 
-.header_nav {
+.header .header_nav {
   position: absolute;
   top: 19.5rem;
   left: 17%;
 }
 
-.arrow-down {
+.main .arrow-down {
   position: absolute;
-  left: 49.5%;
+  left: 47.5%;
   top: 122%;
   height: 2rem;
   width: 2.15rem;
@@ -52,7 +52,7 @@ img {
   margin-top: 1rem;
 }
 
-.border_top {
+.main .border_top {
   min-width: 80%;
   height: 0.1px;
   color:#559ac8;
@@ -63,9 +63,64 @@ img {
   margin-top: 1rem;
 }
 
-.touristSpot_list {
-  padding: 5rem;
+.main .district_title {
+  position:relative;
+  font-size: 2.2rem;
+  padding-bottom: 2rem;
+  color:rgba(138,130,204,1);
+  top:12.5rem;
+  left: 0.2rem;
 }
+
+.touristSpot_list {
+  padding: 5rem 3rem;
+  margin-top: 9.5rem;
+}
+.main .spot_item {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.main .spot_item .item_header {
+  position: relative;
+}
+
+.main .spot_item .spot_item-name {
+  font-size: 1.5rem;
+}
+
+.main .spot_item .item-header-info {
+  position:relative;
+  bottom: 40px;
+  left: 20px;
+}
+.main .spot_item .img_container {
+  position: relative;
+}
+
+.main .spot_item .img_container:hover {
+  opacity: 0.3;
+}
+.main .spot_item .img_container img {
+width: 100%;
+height: 15rem;
+object-fit: cover;
+}
+
+.main .spot_item .item-body {
+  padding: 0 20px 20px ;
+}
+
+.main .spot_item .item-body li {
+  padding: 5px 0;
+  line-height: 1.5rem;
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+
+.main .spot_item .item-body i {
+  margin-right: 0.5rem;
+}
+
 
 @media only screen and (max-width: 28em) {
   .header_nav ul {
@@ -81,18 +136,33 @@ img {
   }
 
   .arrow-down {
-    top: 157%;
-    left: 48%;
+    display: none;
   }
 
   .border_top {
-    top: 160%;
+    display: none;
   }
+
+  .main .district_title {
+  color:rgba(138,130,204,1);
+  top:15.5rem;
+  left: 0.2rem;
+  padding: 2.5rem;
+}
 }
 
 @media only screen and (min-width: 70rem) {
   .btn {
     width: 80%;
     font-size: 1.25rem;
+  }
+
+  .main .arrow-down {
+    top: 48.5%;
+    left: 49%;
+  }
+
+  .main .border_top {
+    top: 50%;
   }
 }
