@@ -17,12 +17,16 @@ img {
   height: auto;
 }
 
+.position-relative {
+  position: relative;
+}
+
+
 .header {
   background-image: url(../assets/Hero.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 .form-select:hover {
@@ -35,20 +39,17 @@ img {
   left: 17%;
 }
 
-.main {
-  position: relative;
-}
-
 .arrow-down {
   position: absolute;
   left: 50%;
-  top: 12.5rem;
+  top: 120%;
   height: 2.65rem;
   width: 2.5rem;
   border-radius: 50%;
   border: 1px solid #559ac8;
   background-color:whitesmoke;
   z-index: 1;
+  margin-top: 2.75rem;
 }
 
 .border_top {
@@ -57,8 +58,12 @@ img {
   color:#559ac8;
   border-bottom: 2.5px dashed #559ac8;
   position: absolute;
-  top: 14rem;
+  top: 125%;
   left: 10%;
+  margin-top: 2.75rem;
+}
+.touristSpot_list {
+  margin-top: 25rem;
 }
 
 @media only screen and (max-width: 28em) {
@@ -75,12 +80,12 @@ img {
   }
 
   .arrow-down {
-    top: 20rem;
+    top: 155%;
     left: 48%;
   }
 
   .border_top {
-    top: 21.5rem;
+    top: 160%;
   }
 }
 
