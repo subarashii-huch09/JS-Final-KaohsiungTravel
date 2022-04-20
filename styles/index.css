@@ -38,6 +38,7 @@ img {
   top: 17.5rem;
   left: 17%;
   margin-bottom: 5rem;
+  box-shadow:0 0 3px #515151;  
 }
 
 .main .arrow-down {
@@ -171,14 +172,21 @@ object-fit: cover;
   .main .border_top {
     top: 65%;
   }
+
+  .popularDistrict_list .btn {
+    padding-left: 1.35rem;
+    padding-right: 1.35rem;
+  }
 }
 
 @media only screen and (min-width: 40rem){
   .header .header_nav {
-  
-  top: 20.5rem;
-  
+  top: 19.5rem;
 }
+.popularDistrict_list .btn {
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
 }
 
 @media only screen and (min-width: 70rem) {
