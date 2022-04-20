@@ -121,7 +121,18 @@ object-fit: cover;
   margin-right: 0.5rem;
 }
 
+.toTop {
+  width: 3.25rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  text-align: center;
+}
 
+.toTop:hover {
+  transform: scale(1.2, 1.2);
+}
 @media only screen and (max-width: 28em) {
   .header_nav ul {
     display: grid;
