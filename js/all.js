@@ -139,48 +139,12 @@ function selectOptionRender(e) {
 }
 
 // 綁監聽器在熱門景點List，當“click”動作執行，涵式則會開始運行
-// 如果點到的並不是按鈕BUTTON，則會結束，如果是按鈕的話，則會執行selectOptionRender函式，來渲染選擇地區內的景點
+// 如果點到的是按鈕的話，則會執行selectOptionRender函式，來渲染選擇地區內的景點
 // 記得在selectOptionRender裡附上event !!
 popularDistrictList.addEventListener('click', (e) => {
   e.preventDefault();
   if (e.target.nodeName === 'BUTTON') {
-    let str = '';
-    touristSpotData.forEach((item) => {
-      // console.log(item.Zone);
-      if (e.target.value === item.Zone) {
-        const content = `<li class="mb-5 col-md-6">
-            <div class="spot_item h-100">
-            <div class="item-header">
-            <div class="img_container">
-                <img src="${item.Picture1}" alt="${item.Name}">
-            </div>
-            <div class="text-white item-header-info d-flex justify-content-center">
-                <h4 class="spot_item-name me-auto">${item.Name}</h4>
-                <p class="text-end me-4">${item.Zone}</p>
-            </div>
-         </div>
-         <ul class="item-body px-3 list-unstyled">
-            <li><i class="fas fa-clock"></i>${item.Opentime}</li>
-            <li><i class="fas fa-map-marked-alt"></i>${item.Add}</li>
-            <li class ="d-flex justify-content-between">
-                <div>
-                    <i class="fas fa-phone-alt text-blue"></i>
-                    <a href="tel:+${item.Tel}">${item.Tel}</a>
-                </div>
-                <div class="tag text-warning">
-                    <i class="fas fa-tag"></i>
-                    <span>${item.Ticketinfo}</span>
-                </div>
-            </li>
-        </ul>
-            </div>
-        </li>`;
-
-        str += content;
-        districtTitle.textContent = e.target.value;
-        touristSpotList.innerHTML = str;
-      }
-    });
+    selectOptionRender(e);
   }
 });
 
