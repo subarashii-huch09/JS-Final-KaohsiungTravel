@@ -39,7 +39,7 @@ function init() {
             </div>
             <div class="text-white item-header-info d-flex justify-content-center">
                 <h4 class="spot_item-name me-auto">${item.Name}</h4>
-                <p class="mx-auto">${item.Zone}</p>
+                <p class="text-end me-4">${item.Zone}</p>
             </div>
          </div>
          <ul class="item-body px-3 list-unstyled">
@@ -109,7 +109,7 @@ function selectOptionRender(e) {
             </div>
             <div class="text-white item-header-info d-flex justify-content-center">
                 <h4 class="spot_item-name me-auto">${item.Name}</h4>
-                <p class="me-auto fs-5">${item.Zone}</p>
+                <p class="text-end me-4">${item.Zone}</p>
             </div>
          </div>
          <ul class="item-body px-3 list-unstyled">
