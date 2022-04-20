@@ -162,6 +162,16 @@ object-fit: cover;
 }
 }
 
+@media only screen and (min-width: 28.5em){
+  .main .arrow-down {
+    top: 63.5%;
+  }
+
+  .main .border_top {
+    top: 65%;
+  }
+}
+
 @media only screen and (min-width: 70rem) {
   .btn {
     width: 80%;
@@ -176,4 +186,22 @@ object-fit: cover;
   .main .border_top {
     top: 50%;
   }
+
+  .main .arrow-down {
+    top: 63%;
+  }
+
+  .main .border_top {
+    top: 65%;
+  }
 }
+@media only screen and (min-width: 125rem){
+   .main .arrow-down {
+    top: 50%;
+  }
+
+  .main .border_top {
+    top: 51.5%;
+  }
+}
+
