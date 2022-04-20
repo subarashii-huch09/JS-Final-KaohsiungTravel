@@ -142,8 +142,10 @@ function selectOptionRender(e) {
 // 如果點到的是按鈕的話，則會執行selectOptionRender函式，來渲染選擇地區內的景點
 // 記得在selectOptionRender裡附上event !!
 popularDistrictList.addEventListener('click', (e) => {
-  e.preventDefault();
+  // e.preventDefault();
+
   if (e.target.nodeName === 'BUTTON') {
+    console.log("why");
     selectOptionRender(e);
   }
 });
