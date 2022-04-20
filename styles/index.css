@@ -35,8 +35,9 @@ img {
 
 .header .header_nav {
   position: absolute;
-  top: 19.5rem;
+  top: 17.5rem;
   left: 17%;
+  margin-bottom: 5rem;
 }
 
 .main .arrow-down {
@@ -170,6 +171,14 @@ object-fit: cover;
   .main .border_top {
     top: 65%;
   }
+}
+
+@media only screen and (min-width: 40rem){
+  .header .header_nav {
+  
+  top: 20.5rem;
+  
+}
 }
 
 @media only screen and (min-width: 70rem) {
