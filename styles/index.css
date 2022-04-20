@@ -85,13 +85,13 @@ img {
 }
 
 .main .spot_item .spot_item-name {
-  font-size: 1.5rem;
+  font-size: 1.125rem;
 }
 
 .main .spot_item .item-header-info {
   position:relative;
-  bottom: 40px;
-  left: 20px;
+  bottom: 45px;
+  left: 15px;
 }
 .main .spot_item .img_container {
   position: relative;
