@@ -145,7 +145,7 @@ popularDistrictList.addEventListener('click', (e) => {
   // e.preventDefault();
 
   if (e.target.nodeName === 'BUTTON') {
-    console.log("why");
+    console.log('why');
     selectOptionRender(e);
   }
 });
