@@ -28,7 +28,7 @@ getData();
 
 // 選染資料到網頁上
 function init() {
-  districtTitle.innerHTML = '<p class="d-none d-md-block mb-md-5">全部</p>';
+  districtTitle.innerHTML = '<h2 class="d-none d-md-block mb-md-5">全部</h2>';
   let str = '';
   touristSpotData.forEach((item) => {
     const content = `<li class="mb-5 col-md-6">
