@@ -34,6 +34,7 @@ getData();
 function init() {
   districtTitle.innerHTML = '<h2 class="d-none d-md-block mb-md-5">全部</h2>';
   let str = '';
+  getDataByPage(1);
   touristSpotData.forEach((item) => {
     const content = `<li class="mb-5 col-md-6">
             <div class="spot_item h-100">
@@ -177,9 +178,11 @@ toTop.addEventListener('click', (e) => {
 
 // Pagination
 const dataPerPage = 8;
+// 負責從全部的資料裡切割資料，然後回傳切割好的新陣列
 function getDataByPage(page) {
   const startIndex = (page - 1) * dataPerPage;
-  return touristSpotData.slice(startIndex, startIndex + dataPerPage);
+  touristSpotData = touristSpotData.slice(startIndex, startIndex + dataPerPage);
+  return touristSpotData;
 }
 
 // 計算總頁數並演算 li.page-item/ 算出我們該生產幾個頁，li.page-item
